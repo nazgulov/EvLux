@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EvLux – inovativní řešení pro nabíjení elektromobilů přímo z veřejného osvětlení. Jednoduché, dostupné a udržitelné nabíjení EV bez nutnosti nové infrastruktury." />
+  <meta name="keywords" content="EvLux, nabíjení elektromobilů, veřejné osvětlení, EV charging, smart city, elektromobilita, nabíjení z lampy" />
+  <meta property="og:title"       content="EvLux – Nabíjení EV z veřejného osvětlení" />
+  <meta property="og:description" content="Inovativní systém pro nabíjení elektromobilů z lamp veřejného osvětlení. Bez kopání, bez nové infrastruktury." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://www.evlux.cz/" />
+  <title>EvLux – Nabíjení elektromobilů z veřejného osvětlení</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300b050'/><text y='.9em' font-size='80' x='10'>⚡</text></svg>" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<header id="navbar">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="EvLux domů">
+        <!-- Lightning bolt icon -->
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="36" height="36" rx="9" fill="#00b050"/>
+          <path d="M21 6L10 20H18L15 30L26 16H18L21 6Z" fill="white" stroke="white" stroke-width="0.5"/>
+        </svg>
+        EvLux
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">O produktu</a></li>
+        <li><a href="#how-it-works">Jak to funguje</a></li>
+        <li><a href="#features">Výhody</a></li>
+        <li><a href="#specs">Parametry</a></li>
+        <li><a href="#usecases">Nasazení</a></li>
+        <li><a href="#contact" class="nav-cta">Kontakt</a></li>
+      </ul>
+
+      <button class="nav-toggle" aria-label="Otevřít menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <div class="hero-grid-lines"  aria-hidden="true"></div>
+  <div class="hero-particles"   aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <!-- Text column -->
+      <div class="hero-text">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          Inovace v elektromobilitě
+        </div>
+
+        <h1>
+          Nabíjejte EV
+          <span class="highlight">z každé lampy</span>
+        </h1>
+
+        <p>
+          EvLux umožňuje nabíjení elektromobilů přímo z infrastruktury veřejného osvětlení.
+          Žádné kopání, žádné velké investice – pouze chytré využití existující sítě.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#how-it-works" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+            Jak to funguje
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Nezávazná konzultace
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="number">
+              <span data-counter="3.7">0</span>&nbsp;kW
+            </div>
+            <div class="label">Výkon nabíjení</div>
+          </div>
+          <div class="stat-item">
+            <div class="number">
+              <span data-counter="95">0</span>&nbsp;%
+            </div>
+            <div class="label">Účinnost zařízení</div>
+          </div>
+          <div class="stat-item">
+            <div class="number">
+              &lt;<span data-counter="2">0</span>&nbsp;h
+            </div>
+            <div class="label">Instalace na stožár</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual column -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-illustration">
+          <div class="hero-glow"></div>
+          <!-- Lamp post with EV charger illustration -->
+          <svg class="lamp-post" viewBox="0 0 440 560" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Ground -->
+            <ellipse cx="220" cy="530" rx="140" ry="18" fill="rgba(0,176,80,0.12)"/>
+            <!-- Pole -->
+            <rect x="210" y="160" width="20" height="370" rx="6" fill="#1e3a2f"/>
+            <rect x="212" y="162" width="6" height="366" rx="3" fill="rgba(255,255,255,0.06)"/>
+            <!-- Arm -->
+            <path d="M220 175 Q290 155 310 130" stroke="#1e3a2f" stroke-width="14" stroke-linecap="round" fill="none"/>
+            <!-- Lamp head -->
+            <rect x="288" y="104" width="64" height="32" rx="10" fill="#253d30"/>
+            <rect x="290" y="106" width="60" height="28" rx="9" fill="#1a2e24"/>
+            <!-- Lamp glow -->
+            <ellipse cx="320" cy="120" rx="28" ry="12" fill="#00b050" opacity="0.7"/>
+            <ellipse cx="320" cy="120" rx="18" ry="7"  fill="#6ee7a0" opacity="0.9"/>
+            <!-- Light rays -->
+            <path d="M320 136 L290 165 M320 136 L310 168 M320 136 L320 170 M320 136 L330 168 M320 136 L350 165" stroke="#00b050" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            <!-- EvLux charger box -->
+            <rect x="185" y="340" width="70" height="90" rx="10" fill="#0d2218" stroke="#00b050" stroke-width="2"/>
+            <rect x="189" y="344" width="62" height="82" rx="8" fill="#142233"/>
+            <!-- Screen -->
+            <rect x="194" y="350" width="52" height="32" rx="5" fill="#00b050" opacity="0.9"/>
+            <text x="201" y="361" font-family="monospace" font-size="7" fill="white" font-weight="bold">EvLux</text>
+            <text x="199" y="373" font-family="monospace" font-size="7" fill="#6ee7a0">3.7 kW ✓</text>
+            <!-- Status LED -->
+            <circle cx="220" cy="396" r="4" fill="#00b050"/>
+            <circle cx="220" cy="396" r="6" fill="#00b050" opacity="0.3"/>
+            <!-- Cable -->
+            <path d="M255 385 Q290 385 310 400 Q330 415 320 440" stroke="#00b050" stroke-width="4" stroke-linecap="round" fill="none"/>
+            <!-- EV Plug connector -->
+            <rect x="310" y="435" width="22" height="14" rx="4" fill="#1e3a2f" stroke="#00b050" stroke-width="1.5"/>
+            <circle cx="315" cy="442" r="2.5" fill="#00b050"/>
+            <circle cx="323" cy="442" r="2.5" fill="#00b050"/>
+            <!-- Car outline -->
+            <g transform="translate(280, 465)">
+              <!-- Body -->
+              <rect x="0" y="16" width="130" height="44" rx="8" fill="#1a2e24" stroke="#00b050" stroke-width="1.5"/>
+              <!-- Roof -->
+              <path d="M20 16 Q30 2 50 2 L80 2 Q100 2 110 16" fill="#142233" stroke="#00b050" stroke-width="1.5"/>
+              <!-- Windows -->
+              <rect x="28" y="5"  width="32" height="14" rx="3" fill="rgba(0,176,80,0.2)" stroke="rgba(0,176,80,0.5)" stroke-width="1"/>
+              <rect x="65" y="5"  width="32" height="14" rx="3" fill="rgba(0,176,80,0.2)" stroke="rgba(0,176,80,0.5)" stroke-width="1"/>
+              <!-- Wheels -->
+              <circle cx="28"  cy="60" r="14" fill="#0d1b2a" stroke="#00b050" stroke-width="2"/>
+              <circle cx="28"  cy="60" r="6"  fill="#1e3a2f"/>
+              <circle cx="102" cy="60" r="14" fill="#0d1b2a" stroke="#00b050" stroke-width="2"/>
+              <circle cx="102" cy="60" r="6"  fill="#1e3a2f"/>
+              <!-- Charge port area -->
+              <rect x="124" y="25" width="8" height="12" rx="2" fill="#00b050"/>
+              <!-- Charging animation dots -->
+              <circle cx="57" cy="32" r="3" fill="#00b050" opacity="0.9"/>
+              <circle cx="67" cy="32" r="3" fill="#00b050" opacity="0.6"/>
+              <circle cx="77" cy="32" r="3" fill="#00b050" opacity="0.3"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Přejděte dolů</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT – O produktu
+     ============================================================ -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid">
+      <!-- Visual -->
+      <div class="about-image-wrap animate-on-scroll">
+        <div class="about-card-img">
+          <svg viewBox="0 0 520 420" fill="none" xmlns="http://www.w3.org/2000/svg" style="background:linear-gradient(135deg,#0d1b2a,#142233);border-radius:20px;">
+            <!-- Street scene -->
+            <rect width="520" height="420" rx="20" fill="url(#streetGrad)"/>
+            <defs>
+              <linearGradient id="streetGrad" x1="0" y1="0" x2="520" y2="420" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#0d1b2a"/>
+                <stop offset="100%" stop-color="#0a2318"/>
+              </linearGradient>
+            </defs>
+            <!-- Stars/dots background -->
+            <circle cx="80"  cy="60"  r="2" fill="rgba(255,255,255,0.4)"/>
+            <circle cx="180" cy="30"  r="1" fill="rgba(255,255,255,0.3)"/>
+            <circle cx="320" cy="50"  r="2" fill="rgba(255,255,255,0.3)"/>
+            <circle cx="440" cy="80"  r="1" fill="rgba(255,255,255,0.4)"/>
+            <circle cx="490" cy="35"  r="1.5" fill="rgba(255,255,255,0.3)"/>
+            <!-- Ground -->
+            <rect x="0" y="340" width="520" height="80" rx="0" fill="#0a1a12"/>
+            <!-- Road -->
+            <rect x="0" y="340" width="520" height="60" fill="#111f16"/>
+            <!-- Road markings -->
+            <rect x="230" y="355" width="40" height="8"  rx="3" fill="rgba(255,255,255,0.15)"/>
+            <rect x="230" y="375" width="40" height="8"  rx="3" fill="rgba(255,255,255,0.15)"/>
+            <!-- Lamp posts x3 -->
+            <g transform="translate(80,0)">
+              <rect x="0" y="90" width="12" height="250" rx="4" fill="#1e3a2f"/>
+              <path d="M6 110 Q50 95 65 75" stroke="#1e3a2f" stroke-width="9" fill="none"/>
+              <rect x="44" y="62" width="42" height="22" rx="7" fill="#253d30"/>
+              <ellipse cx="65" cy="73" rx="18" ry="8" fill="#00b050" opacity="0.8"/>
+              <rect x="-18" y="220" width="48" height="60" rx="8" fill="#0d2218" stroke="#00b050" stroke-width="1.5"/>
+              <rect x="-15" y="223" width="42" height="54" rx="7" fill="#142233"/>
+              <rect x="-11" y="227" width="34" height="20" rx="4" fill="#00b050" opacity="0.85"/>
+              <text x="-5" y="237" font-family="monospace" font-size="5" fill="white" font-weight="bold">EvLux</text>
+              <text x="-7" y="244" font-family="monospace" font-size="5" fill="#6ee7a0">OK ✓</text>
+              <circle cx="6"  cy="268" r="3" fill="#00b050"/>
+            </g>
+            <g transform="translate(250,0)">
+              <rect x="0" y="90" width="12" height="250" rx="4" fill="#1e3a2f"/>
+              <path d="M6 110 Q50 95 65 75" stroke="#1e3a2f" stroke-width="9" fill="none"/>
+              <rect x="44" y="62" width="42" height="22" rx="7" fill="#253d30"/>
+              <ellipse cx="65" cy="73" rx="18" ry="8" fill="#00b050" opacity="0.8"/>
+              <rect x="-18" y="220" width="48" height="60" rx="8" fill="#0d2218" stroke="#00b050" stroke-width="1.5"/>
+              <rect x="-15" y="223" width="42" height="54" rx="7" fill="#142233"/>
+              <rect x="-11" y="227" width="34" height="20" rx="4" fill="#00b050" opacity="0.85"/>
+              <text x="-5" y="237" font-family="monospace" font-size="5" fill="white" font-weight="bold">EvLux</text>
+              <text x="-7" y="244" font-family="monospace" font-size="5" fill="#6ee7a0">OK ✓</text>
+              <circle cx="6"  cy="268" r="3" fill="#00b050"/>
+            </g>
+            <g transform="translate(400,0)">
+              <rect x="0" y="90" width="12" height="250" rx="4" fill="#1e3a2f"/>
+              <path d="M6 110 Q50 95 65 75" stroke="#1e3a2f" stroke-width="9" fill="none"/>
+              <rect x="44" y="62" width="42" height="22" rx="7" fill="#253d30"/>
+              <ellipse cx="65" cy="73" rx="18" ry="8" fill="#00b050" opacity="0.8"/>
+              <rect x="-18" y="220" width="48" height="60" rx="8" fill="#0d2218" stroke="#00b050" stroke-width="1.5"/>
+              <rect x="-15" y="223" width="42" height="54" rx="7" fill="#142233"/>
+              <rect x="-11" y="227" width="34" height="20" rx="4" fill="#00b050" opacity="0.85"/>
+              <text x="-5" y="237" font-family="monospace" font-size="5" fill="white" font-weight="bold">EvLux</text>
+              <text x="-7" y="244" font-family="monospace" font-size="5" fill="#6ee7a0">OK ✓</text>
+              <circle cx="6"  cy="268" r="3" fill="#00b050"/>
+            </g>
+            <!-- Parked EVs -->
+            <g transform="translate(100, 300)">
+              <rect x="0"   y="0"  width="100" height="36" rx="6" fill="#0a1a10" stroke="#00b050" stroke-width="1"/>
+              <path d="M10 0 Q18 -14 32 -14 L68 -14 Q82 -14 90 0" fill="#0d2218" stroke="#00b050" stroke-width="1"/>
+              <circle cx="22" cy="36" r="10" fill="#0d1b2a" stroke="#00b050" stroke-width="1.5"/>
+              <circle cx="78" cy="36" r="10" fill="#0d1b2a" stroke="#00b050" stroke-width="1.5"/>
+              <circle cx="22" cy="36" r="4"  fill="#1e3a2f"/>
+              <circle cx="78" cy="36" r="4"  fill="#1e3a2f"/>
+              <!-- charge cable -->
+              <path d="M-38 -30 Q-10 -25 0 12" stroke="#00b050" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </g>
+            <g transform="translate(300, 300)">
+              <rect x="0"   y="0"  width="100" height="36" rx="6" fill="#0a1a10" stroke="#00b050" stroke-width="1"/>
+              <path d="M10 0 Q18 -14 32 -14 L68 -14 Q82 -14 90 0" fill="#0d2218" stroke="#00b050" stroke-width="1"/>
+              <circle cx="22" cy="36" r="10" fill="#0d1b2a" stroke="#00b050" stroke-width="1.5"/>
+              <circle cx="78" cy="36" r="10" fill="#0d1b2a" stroke="#00b050" stroke-width="1.5"/>
+              <circle cx="22" cy="36" r="4"  fill="#1e3a2f"/>
+              <circle cx="78" cy="36" r="4"  fill="#1e3a2f"/>
+              <path d="M-38 -30 Q-10 -25 0 12" stroke="#00b050" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </g>
+            <!-- EvLux label -->
+            <text x="200" y="25" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="rgba(255,255,255,0.7)" text-anchor="middle">Nová generace chytrého nabíjení</text>
+          </svg>
+        </div>
+
+        <div class="about-badge">
+          <div class="icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <div>
+            <strong>Okamžitě připraveno</strong>
+            <span>Plug &amp; Play instalace</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="about-text animate-on-scroll animate-delay-2">
+        <span class="section-label">O produktu</span>
+        <h2>Nabíjení EV z&nbsp;veřejného osvětlení</h2>
+        <p>
+          EvLux je kompaktní nabíjecí systém, který se montuje přímo na stožár veřejného osvětlení
+          a využívá jeho elektrickou infrastrukturu. Tento přístup výrazně snižuje náklady na
+          vybudování nabíjecí sítě a umožňuje rychlé pokrytí celých čtvrtí nebo obcí.
+        </p>
+        <p>
+          Systém je vhodný pro obce, správce majetku, parkovací plochy i privátní investory.
+          EvLux nabíjí elektromobily výkonem až 3,7 kW s plnou podporou OCPP protokolu
+          a vzdálenou správou přes cloudovou platformu.
+        </p>
+
+        <div class="about-points">
+          <div class="about-point">
+            <div class="check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <strong>Využití stávající infrastruktury</strong>
+              <span>Montáž na existující stožár, žádné zemní práce</span>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <strong>Chytrá správa přes cloud</strong>
+              <span>OCPP 1.6, vzdálený monitoring a platby</span>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="check">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <strong>Nízké provozní náklady</strong>
+              <span>Minimální údržba, automatická aktualizace firmware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section id="how-it-works" class="section section--alt">
+  <div class="container">
+    <div class="how-header animate-on-scroll">
+      <span class="section-label">Jak to funguje</span>
+      <h2>Od lampy k plné baterii ve 4 krocích</h2>
+      <p>Jednoduchý proces od instalace až po platbu za nabíjení.</p>
+    </div>
+
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <div class="step-card animate-on-scroll animate-delay-1">
+        <div class="step-number" aria-hidden="true">1</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+        </div>
+        <h3>Instalace na stožár</h3>
+        <p>Technik upevní box EvLux na stávající stožár veřejného osvětlení. Zapojení trvá méně než 2 hodiny.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card animate-on-scroll animate-delay-2">
+        <div class="step-number" aria-hidden="true">2</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/><path d="M9 7h6"/><path d="M9 11h6"/></svg>
+        </div>
+        <h3>Spárování přes aplikaci</h3>
+        <p>Řidič si stáhne aplikaci nebo použije RFID kartu a spáruje vozidlo s nabíjecím bodem.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card animate-on-scroll animate-delay-3">
+        <div class="step-number" aria-hidden="true">3</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <h3>Inteligentní nabíjení</h3>
+        <p>Systém optimalizuje výkon nabíjení podle stavu sítě a požadavků vozidla. Výkon až 3,7 kW AC.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-card animate-on-scroll animate-delay-4">
+        <div class="step-number" aria-hidden="true">4</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
+        </div>
+        <h3>Platba &amp; Reporting</h3>
+        <p>Automatická fakturace přes aplikaci, platební kartu nebo předplacenou peněženku. Kompletní reporting pro provozovatele.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURES – Výhody
+     ============================================================ -->
+<section id="features" class="section">
+  <div class="container">
+    <div class="features-header animate-on-scroll">
+      <span class="section-label">Výhody</span>
+      <h2>Proč zvolit EvLux?</h2>
+      <p>Chytré řešení pro moderní elektromobilitu kombinující dostupnost, jednoduchost a udržitelnost.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card animate-on-scroll animate-delay-1">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Bez zemních prací</h3>
+        <p>Veškerá potřebná elektroinstalace je vedena stávajícím stožárem. Žádné kopání, žádné rušení chodníků ani komunikací.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll animate-delay-2">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h3>Nízké náklady</h3>
+        <p>Investice do EvLux je až 4× nižší oproti klasické nabíjecí stanici. Rychlá návratnost investice díky úspoře na infrastruktuře.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll animate-delay-3">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Rychlá instalace</h3>
+        <p>Celá instalace jednoho nabíjecího místa trvá méně než 2 hodiny. Jeden technik, minimální narušení provozu.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll animate-delay-1">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3>Vzdálená správa</h3>
+        <p>Kompletní cloudová správa – monitoring nabíjení, správa uživatelů, reporty spotřeby a příjmů v&nbsp;reálném čase.</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll animate-delay-2">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h3>Smart City integrace</h3>
+        <p>Snadná integrace do stávajících systémů správy veřejného osvětlení a Smart City platforem (MQTT, REST API).</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll animate-delay-3">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3>Otevřené standardy</h3>
+        <p>Plná podpora OCPP 1.6J / 2.0 a Type 2 konektoru. Kompatibilní se všemi elektromobily prodávanými v EU.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TECHNICAL SPECS
+     ============================================================ -->
+<section id="specs" class="section section--alt">
+  <div class="container">
+    <div class="specs-grid">
+      <!-- Visual -->
+      <div class="specs-visual animate-on-scroll">
+        <div class="specs-visual-card">
+          <svg viewBox="0 0 280 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Device box front -->
+            <rect x="60"  y="40"  width="160" height="220" rx="16" fill="#142233" stroke="#00b050" stroke-width="2"/>
+            <rect x="64"  y="44"  width="152" height="212" rx="14" fill="#0d1b2a"/>
+            <!-- Screen -->
+            <rect x="76"  y="56"  width="128" height="80"  rx="10" fill="#00b050" opacity="0.9"/>
+            <rect x="78"  y="58"  width="124" height="76"  rx="9"  fill="#009040"/>
+            <!-- Screen content -->
+            <text x="110" y="85"  font-family="Inter,sans-serif" font-size="13" fill="white" font-weight="800">EvLux</text>
+            <text x="84"  y="105" font-family="monospace"        font-size="10" fill="#d1fae5">Status: Připraveno</text>
+            <text x="84"  y="121" font-family="monospace"        font-size="10" fill="#d1fae5">Výkon: 3.7 kW AC</text>
+            <!-- LED row -->
+            <circle cx="102" cy="158" r="7" fill="#00b050"/>
+            <circle cx="102" cy="158" r="11" fill="#00b050" opacity="0.2"/>
+            <text x="116" y="162" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.6)">Aktivní</text>
+            <!-- Type 2 socket -->
+            <rect x="110" y="180" width="60" height="50" rx="10" fill="#1a2e24" stroke="rgba(0,176,80,0.5)" stroke-width="1.5"/>
+            <ellipse cx="140" cy="205" rx="20" ry="18" fill="#0d1b2a" stroke="#00b050" stroke-width="1.5"/>
+            <circle cx="134" cy="198" r="3" fill="#00b050"/>
+            <circle cx="146" cy="198" r="3" fill="#00b050"/>
+            <circle cx="140" cy="210" r="3" fill="#00b050"/>
+            <circle cx="130" cy="208" r="2" fill="rgba(0,176,80,0.5)"/>
+            <circle cx="150" cy="208" r="2" fill="rgba(0,176,80,0.5)"/>
+            <!-- Type 2 label -->
+            <text x="120" y="242" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Type 2 / IEC 62196</text>
+            <!-- Side screws -->
+            <circle cx="70"  cy="55"  r="3" fill="rgba(0,176,80,0.3)"/>
+            <circle cx="210" cy="55"  r="3" fill="rgba(0,176,80,0.3)"/>
+            <circle cx="70"  cy="251" r="3" fill="rgba(0,176,80,0.3)"/>
+            <circle cx="210" cy="251" r="3" fill="rgba(0,176,80,0.3)"/>
+            <!-- Mounting bracket -->
+            <rect x="115" y="260" width="50" height="20" rx="4" fill="#1e3a2f" stroke="rgba(0,176,80,0.4)" stroke-width="1"/>
+            <rect x="130" y="280" width="20" height="70" rx="6" fill="#1e3a2f"/>
+            <!-- Base circle glow -->
+            <ellipse cx="140" cy="360" rx="60"  ry="12" fill="#00b050" opacity="0.12"/>
+            <ellipse cx="140" cy="360" rx="30"  ry="6"  fill="#00b050" opacity="0.2"/>
+            <!-- Cert badges -->
+            <rect x="60"  y="310" width="50" height="26" rx="5" fill="rgba(0,176,80,0.1)" stroke="rgba(0,176,80,0.3)" stroke-width="1"/>
+            <text x="68"  y="328" font-family="monospace" font-size="9" fill="rgba(0,176,80,0.8)">CE / IP54</text>
+            <rect x="120" y="310" width="50" height="26" rx="5" fill="rgba(0,176,80,0.1)" stroke="rgba(0,176,80,0.3)" stroke-width="1"/>
+            <text x="126" y="328" font-family="monospace" font-size="9" fill="rgba(0,176,80,0.8)">OCPP 1.6</text>
+            <rect x="180" y="310" width="50" height="26" rx="5" fill="rgba(0,176,80,0.1)" stroke="rgba(0,176,80,0.3)" stroke-width="1"/>
+            <text x="185" y="328" font-family="monospace" font-size="9" fill="rgba(0,176,80,0.8)">IEC 62196</text>
+          </svg>
+          <p>EvLux Charger v2.0 — certifikovaný nabíjecí systém</p>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="specs-table animate-on-scroll animate-delay-2">
+        <span class="section-label">Technické parametry</span>
+        <h2>Specifikace zařízení</h2>
+        <p>Kompaktní, odolné a certifikované zařízení splňující veškeré evropské normy pro nabíjení elektromobilů.</p>
+
+        <div class="spec-group">
+          <h3>Elektrické parametry</h3>
+          <div class="spec-row">
+            <span class="spec-key">Výstupní výkon</span>
+            <span class="spec-val">3,7 kW (1× 16 A / 230 V AC)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Vstupní napájení</span>
+            <span class="spec-val">230 V AC, 50 Hz</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Účinnost</span>
+            <span class="spec-val">&gt; 95 %</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Typ konektoru</span>
+            <span class="spec-val">Type 2 (IEC 62196-2), kabel 5 m</span>
+          </div>
+        </div>
+
+        <div class="spec-group">
+          <h3>Komunikace &amp; Software</h3>
+          <div class="spec-row">
+            <span class="spec-key">Protokol</span>
+            <span class="spec-val">OCPP 1.6J / 2.0.1</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Konektivita</span>
+            <span class="spec-val">4G LTE / Wi-Fi 2.4 GHz</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Autentizace</span>
+            <span class="spec-val">RFID (ISO 14443), mobilní aplikace, QR kód</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">API</span>
+            <span class="spec-val">REST API, MQTT</span>
+          </div>
+        </div>
+
+        <div class="spec-group">
+          <h3>Mechanické &amp; Provozní</h3>
+          <div class="spec-row">
+            <span class="spec-key">Stupeň krytí</span>
+            <span class="spec-val">IP54</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Provozní teplota</span>
+            <span class="spec-val">−20 °C až +55 °C</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Rozměry (v × š × h)</span>
+            <span class="spec-val">320 × 180 × 120 mm</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Hmotnost</span>
+            <span class="spec-val">4,2 kg</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-key">Certifikace</span>
+            <span class="spec-val">CE, IEC 61851-1, IEC 62196</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SUSTAINABILITY / NUMBERS
+     ============================================================ -->
+<section id="sustainability" class="section">
+  <div class="container">
+    <div class="sustain-header animate-on-scroll">
+      <span class="section-label">Udržitelnost</span>
+      <h2>Dopad na životní prostředí</h2>
+      <p>Každý nainstalovaný EvLux přispívá k čistší a udržitelnější dopravě.</p>
+    </div>
+
+    <div class="sustain-grid">
+      <div class="sustain-card animate-on-scroll animate-delay-1">
+        <div class="sustain-icon">🌍</div>
+        <div class="sustain-big-number"><span data-counter="1200">0</span> kg</div>
+        <h3>CO₂ ušetřeno ročně</h3>
+        <p>Průměrná roční úspora emisí CO₂ na jedno nabíjecí místo oproti konvenčnímu palivovému vozidlu.</p>
+      </div>
+
+      <div class="sustain-card animate-on-scroll animate-delay-2">
+        <div class="sustain-icon">⚡</div>
+        <div class="sustain-big-number"><span data-counter="4">0</span>×</div>
+        <h3>Nižší investice</h3>
+        <p>Náklady na infrastrukturu jsou až 4× nižší než u klasické nabíjecí stanice s vlastním kabelovým vedením.</p>
+      </div>
+
+      <div class="sustain-card animate-on-scroll animate-delay-3">
+        <div class="sustain-icon">🏙️</div>
+        <div class="sustain-big-number"><span data-counter="0">0</span> m²</div>
+        <h3>Nový veřejný prostor</h3>
+        <p>EvLux nezabírá žádný nový prostor – využívá existující stožáry a zachovává chodníky a komunikace beze změny.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     USE CASES – Nasazení
+     ============================================================ -->
+<section id="usecases" class="section section--alt">
+  <div class="container">
+    <div class="usecases-header animate-on-scroll">
+      <span class="section-label">Nasazení</span>
+      <h2>Kde EvLux využijete?</h2>
+      <p>Systém je vhodný pro celou řadu provozovatelů veřejného i soukromého osvětlení.</p>
+    </div>
+
+    <div class="usecases-grid">
+      <div class="usecase-card animate-on-scroll animate-delay-1">
+        <div class="usecase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <div class="usecase-body">
+          <h3>Obce a města</h3>
+          <p>Rychlé budování sítě veřejného nabíjení bez nutnosti rozkopávání chodníků. Ideální pro Smart City projekty a dotační programy.</p>
+        </div>
+      </div>
+
+      <div class="usecase-card animate-on-scroll animate-delay-2">
+        <div class="usecase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div class="usecase-body">
+          <h3>Parkovací plochy</h3>
+          <p>Přidejte hodnotu stávajícím parkovistím. Nabíjení přímo u parkovacích míst bez nutnosti nové přípojky.</p>
+        </div>
+      </div>
+
+      <div class="usecase-card animate-on-scroll animate-delay-3">
+        <div class="usecase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div class="usecase-body">
+          <h3>Sídliště a bytové domy</h3>
+          <p>Řešení pro obyvatele bez vlastní garáže. EvLux na stožárech v okolí domu umožní každodenní domácí nabíjení.</p>
+        </div>
+      </div>
+
+      <div class="usecase-card animate-on-scroll animate-delay-4">
+        <div class="usecase-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <div class="usecase-body">
+          <h3>Firemní areály</h3>
+          <p>Umožněte zaměstnancům i návštěvníkům pohodlné nabíjení přes den. Přehledný reporting pro firemní fleet management.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BAND
+     ============================================================ -->
+<section class="cta-band">
+  <div class="container">
+    <div class="animate-on-scroll">
+      <h2>Připraveni rozjet nabíjecí síť?</h2>
+      <p>Kontaktujte nás a domluvte si bezplatnou konzultaci. Poradíme vám s výběrem lokací, kalkulací nákladů i s dotacemi.</p>
+      <a href="#contact" class="btn-white">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36a2 2 0 0 1 1.95-2.16H6.5a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.1 6.1l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Nezávazná konzultace zdarma
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT – Kontakt
+     ============================================================ -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="contact-info animate-on-scroll">
+        <span class="section-label">Kontakt</span>
+        <h2>Pojďme to probrat</h2>
+        <p>
+          Máte zájem o nasazení EvLux ve vaší obci, firmě nebo na parkovišti?
+          Kontaktujte nás – rádi připravíme nezávaznou nabídku na míru.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.36a2 2 0 0 1 1.95-2.16H6.5a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.1 6.1l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <strong>+420 XXX XXX XXX</strong>
+              <span>Po–Pá 8:00–17:00</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <strong>info@evlux.cz</strong>
+              <span>Odpovídáme do 24 hodin</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <strong>Česká republika</strong>
+              <span>Celostátní pokrytí servisem</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form-wrap animate-on-scroll animate-delay-2">
+        <h3>Napište nám</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">Jméno</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jan" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Příjmení</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Novák" required autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="form-group full">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="jan.novak@firma.cz" required autocomplete="email" />
+          </div>
+
+          <div class="form-group full">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="+420 XXX XXX XXX" autocomplete="tel" />
+          </div>
+
+          <div class="form-group full">
+            <label for="subject">Oblast zájmu</label>
+            <select id="subject" name="subject">
+              <option value="">-- Vyberte oblast --</option>
+              <option value="municipality">Obec / Město</option>
+              <option value="parking">Parkoviště</option>
+              <option value="residential">Sídliště / Bytový dům</option>
+              <option value="company">Firemní areál</option>
+              <option value="other">Jiné</option>
+            </select>
+          </div>
+
+          <div class="form-group full">
+            <label for="message">Zpráva</label>
+            <textarea id="message" name="message" placeholder="Popište váš záměr, počet parkovacích míst, lokalitu…" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Odeslat zprávu
+          </button>
+
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Děkujeme! Ozveme se vám co nejdříve.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#hero" class="logo" aria-label="EvLux – zpět nahoru">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="9" fill="#00b050"/>
+            <path d="M21 6L10 20H18L15 30L26 16H18L21 6Z" fill="white"/>
+          </svg>
+          EvLux
+        </a>
+        <p>Inovativní systém pro nabíjení elektromobilů z veřejného osvětlení. Rychlá, dostupná a udržitelná elektromobilita pro každé město.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9 9 0 0 1-2.88 1.1A4.52 4.52 0 0 0 16.11 0c-2.5 0-4.52 2.02-4.52 4.52 0 .35.04.7.11 1.03A12.83 12.83 0 0 1 2.39.89a4.52 4.52 0 0 0 1.4 6.03 4.49 4.49 0 0 1-2.05-.57v.06A4.52 4.52 0 0 0 5.37 10.8a4.6 4.6 0 0 1-2.04.08 4.52 4.52 0 0 0 4.22 3.14A9.07 9.07 0 0 1 1 15.54a12.8 12.8 0 0 0 6.92 2.03c8.3 0 12.85-6.88 12.85-12.85 0-.2 0-.39-.01-.58A9.17 9.17 0 0 0 23 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Product -->
+      <div class="footer-col">
+        <h4>Produkt</h4>
+        <ul>
+          <li><a href="#about">O EvLux</a></li>
+          <li><a href="#how-it-works">Jak to funguje</a></li>
+          <li><a href="#features">Výhody</a></li>
+          <li><a href="#specs">Technické parametry</a></li>
+          <li><a href="#usecases">Případy nasazení</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-col">
+        <h4>Podpora</h4>
+        <ul>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#">Dokumentace</a></li>
+          <li><a href="#">Servis</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Ke stažení</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-col">
+        <h4>Společnost</h4>
+        <ul>
+          <li><a href="#">O nás</a></li>
+          <li><a href="#">Reference</a></li>
+          <li><a href="#">Partneři</a></li>
+          <li><a href="#">Kariéra</a></li>
+          <li><a href="#">Média</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> EvLux s.r.o. Všechna práva vyhrazena.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Zásady ochrany soukromí</a>
+        <a href="#">Obchodní podmínky</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+  // Set current year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

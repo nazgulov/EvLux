@@ -1,0 +1,94 @@
+/* ===========================
+   EvLux – Animations & Extra
+   =========================== */
+
+/* Spinner animation for submit button */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.spin-icon { animation: spin .8s linear infinite; }
+
+/* Counter animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.counter-animated { animation: countUp .5s ease forwards; }
+
+/* Particle dots for hero */
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px; height: 4px;
+  background: rgba(0,176,80,.4);
+  border-radius: 50%;
+  animation: particleFloat linear infinite;
+}
+
+@keyframes particleFloat {
+  0%   { opacity: 0; transform: translateY(100vh) scale(0); }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-100px) scale(1); }
+}
+
+/* Notification toast */
+.toast {
+  position: fixed;
+  bottom: 2rem; right: 2rem;
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  z-index: 9999;
+  transform: translateY(120%);
+  transition: transform .4s cubic-bezier(.34,1.56,.64,1);
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  font-size: .95rem;
+  font-weight: 500;
+}
+
+.toast.show { transform: translateY(0); }
+.toast svg  { width: 20px; height: 20px; color: var(--color-primary); }
+
+/* Active nav link */
+.nav-links a.active {
+  color: var(--color-primary) !important;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Image-like visual for about section */
+.ev-charging-visual {
+  background: linear-gradient(135deg, #0d1b2a 0%, #142233 100%);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  box-shadow: var(--shadow-lg);
+}
+
+.ev-charging-visual .visual-title {
+  color: rgba(255,255,255,.5);
+  font-size: .82rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
